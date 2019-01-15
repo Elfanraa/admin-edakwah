@@ -66,12 +66,14 @@
 	}
 	?>
 <div id="login_content" class="col-md-11 login">
+	<body class="hold-transition login-page"  style="background-repeat: no-repeat; background-size: cover; background-image:url(<?php echo ("images/background2.png"); ?>);">
+
   	<div class="col-md-4 col-md-offset-4">
 	      <div class="panel panel-default">
 			  <!-- Default panel contents -->
 			  <div class="panel-heading">
-				  <center><h3>Login Administrator</h3></center>
-				  <center>( Elida Konfeksi Android App )</center>
+				  <center><a href="#"><img src="<?php echo("images/logo-admin.png"); ?>"/></a></center>
+				  
 			  </div>
 			  <div class="panel-body">
 				<center><?php echo isset($error['failed']) ? $error['failed'] : '';?></center>
