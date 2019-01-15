@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/custom.css">
-        <title>Ecommerce Admin Page</title>
+        <title>Edakwah Admin Page</title>
         <style>
             .login{
               margin-top: 12%;
