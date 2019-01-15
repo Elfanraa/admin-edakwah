@@ -42,7 +42,7 @@
                 <li><a href="hadits.php">Hadist</a></li>
                 <li><a href="inspirasi.php">Cerita Inspirasi</a></li>
                 <li><a href="quote.php">Quote</a></li>
-                <li><a href="ongkir.php">Info Kegiatan</a></li>
+                <li><a href="info.php">Info Kegiatan</a></li>
              <!--<li><a href="laporan.php">Laporan</a></li>   --> 
                <!--  <li><a href="setting.php">Setting</a></li>   -->    
                 <li><a href="admin.php">User</a></li>
