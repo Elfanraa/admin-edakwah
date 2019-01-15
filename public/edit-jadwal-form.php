@@ -139,13 +139,13 @@
 				// check update result
 				if($update_result){
 					$error['update_jadwal'] = " <h4><div class='alert alert-success'>
-														Success update category
+														Success update jadwal kajian
 														<a href='jadwal.php'>
 														<i class='fa fa-check fa-lg'></i>
 														</a></div>
 												  </h4>";
 				}else{
-					$error['update_jadwal'] = " <span class='label label-danger'>Failed update category</span>";
+					$error['update_jadwal'] = " <span class='label label-danger'>Failed update jadwal kajian</span>";
 				}
 			}
 				
@@ -217,7 +217,7 @@
 	</div> -->
 
 	<div class="col-md-12">
-		<h1>Add Jadwal</h1>
+		<h1>Edit Jadwal</h1>
 		<?php echo isset($error['update_jadwal']) ? $error['update_jadwal'] : '';?>
 		<hr />
 	</div>

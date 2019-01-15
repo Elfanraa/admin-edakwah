@@ -174,7 +174,7 @@
 		<hr />
 	</div>
 	
-	<div class="col-md-5">
+	<div class="col-md-12">
 		<form method="post"
 			enctype="multipart/form-data">
 			<label>Judul :</label><?php echo isset($error['judul']) ? $error['judul'] : '';?>

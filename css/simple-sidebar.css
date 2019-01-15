@@ -68,8 +68,10 @@
     display: block;
     text-decoration: none;
     font-size: 18px;
-    color: #fff;
+    color: white;
 }
+
+
 
 .sidebar-nav li a:hover {
     text-decoration: none;

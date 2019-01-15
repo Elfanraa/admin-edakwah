@@ -60,7 +60,7 @@
 		}
 		
 		// number of data that will be display per page
-		$offset = 20;
+		$offset = 7;
 							
 		//lets calculate the LIMIT for SQL, and save it $from
 		if ($page){

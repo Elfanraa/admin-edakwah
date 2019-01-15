@@ -33,21 +33,22 @@
         <div id="sidebar-wrapper" style="background-color: #4aad99 ">
             <ul class="sidebar-nav">
 
+
                 <img src="<?php echo("images/sidebar-logo.png"); ?>"/> 
                 <p style="color: #fff; font-size: 30px;">________________________________</p>
-                <li><a href="jadwal.php">Jadwal Kajian</a></li>
+                <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="jadwal.php">Jadwal Kajian</a></li>
                 <!-- <li><a href="category.php">Materi</a></li> -->
-                <li><a href="doa.php">Doa</a></li>
-                <li><a href="kisah.php">Kisah Nabi</a></li>
-                <li><a href="video.php">Video</a></li>
-                <li><a href="hadits.php">Hadist</a></li>
-                <li><a href="inspirasi.php">Cerita Inspirasi</a></li>
-                <li><a href="quote.php">Quote</a></li>
-                <li><a href="info.php">Info Kegiatan</a></li>
+                <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="doa.php">Doa</a></li>
+                <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="kisah.php">Kisah Nabi</a></li>
+                <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="video.php">Video</a></li>
+                <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="hadits.php">Hadist</a></li>
+                <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="inspirasi.php">Cerita Inspirasi</a></li>
+                <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="quote.php">Quote</a></li>
+                <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="info.php">Info Kegiatan</a></li>
              <!--<li><a href="laporan.php">Laporan</a></li>   --> 
                <!--  <li><a href="setting.php">Setting</a></li>   -->    
-                <li><a href="admin.php">User</a></li>
-                <li><a href="logout.php">Logout</a></li>
+                <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="admin.php">User</a></li>
+                <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="logout.php">Logout</a></li>
                 <p style="color: #fff; font-size: 30px;">________________________________</p>
                
 

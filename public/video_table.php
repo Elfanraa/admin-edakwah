@@ -59,7 +59,7 @@
 		}
 						
 		// number of data that will be display per page		
-		$offset = 10;
+		$offset = 7;
 						
 		//lets calculate the LIMIT for SQL, and save it $from
 		if ($page){
@@ -143,7 +143,7 @@
 	<!-- end of search form -->
 	
 	<br/>
-	<div class="col-md-5">
+	<div class="col-md-12">
 	<div class="table-responsive">
 	<table class='table table-hover table-condensed table-bordered'>
 		<tr class="success">

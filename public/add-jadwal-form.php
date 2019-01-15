@@ -82,13 +82,13 @@
 				
 				if($result){
 					$error['add_jadwal'] = " <h4><div class='alert alert-success'>
-														* Success add new category
+														* Success add new jadwal kajian
 														<a href='jadwal.php'>
-														<i class='fa fa-check fa-lg'></i>
+														<i class=fas fa-check'></i>
 														</a></div>
 												  </h4>";
 				}else{
-					$error['add_jadwal'] = " <span class='label label-danger'>Failed add ekspedisi</span>";
+					$error['add_jadwal'] = " <span class='label label-danger'>Failed add jadwal kajian</span>";
 				}
 			}
 			

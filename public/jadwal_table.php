@@ -64,7 +64,7 @@
 		}
 		
 		// number of data that will be display per page
-		$offset = 20;
+		$offset = 7;
 							
 		//lets calculate the LIMIT for SQL, and save it $from
 		if ($page){
@@ -117,7 +117,12 @@
 		// if no data on database show "Tidak Ada Pemesanan"
 		if($total_records_paging == 0){
 	?>
-	<h1>There is No Order</h1>
+	<h1>Jadwal Kajian Tidak Ditemukan
+		<a href="add-jadwal.php">
+			<button class="btn btn-danger">Add New Jadwal</button>
+		</a>
+	</h1>
+
 	<hr />
 	
 	<?php
@@ -125,6 +130,7 @@
 		}else{ $row_number = $from + 1;?>
 	
 	<div>
+
 
 	<div class="col-md-12">
 		<h1>Jadwal Kajian

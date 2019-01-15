@@ -124,13 +124,13 @@
 				// check update result
 				if($update_result){
 					$error['update_video'] = " <h4><div class='alert alert-success'>
-														Success update quote
+														Success update video
 														<a href='video.php'>
 														<i class='fa fa-check fa-lg'></i>
 														</a></div>
 												  </h4>";
 				}else{
-					$error['update_video'] = " <span class='label label-danger'>Failed update quote</span>";
+					$error['update_video'] = " <span class='label label-danger'>Failed update video</span>";
 				}
 			}
 				

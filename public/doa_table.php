@@ -58,7 +58,7 @@
 		}
 						
 		// number of data that will be display per page		
-		$offset = 10;
+		$offset = 7;
 						
 		//lets calculate the LIMIT for SQL, and save it $from
 		if ($page){
@@ -103,7 +103,7 @@
 		if($total_records_paging == 0){
 	
 	?>
-	<h1>Category Not Available
+	<h1>Doa Not Available
 		<a href="add-doa.php">
 			<button class="btn btn-danger">Add New Doa</button>
 		</a>
@@ -141,7 +141,7 @@
 	<!-- end of search form -->
 	
 	<br/>
-	<div class="col-md-5">
+	<div class="col-md-12">
 	<div class="table-responsive">
 	<table class='table table-hover table-condensed table-bordered'>
 		<tr class="success">
