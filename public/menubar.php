@@ -30,11 +30,11 @@
 
     <div id="wrapper">
 <!-- Sidebar -->
-        <div id="sidebar-wrapper">
+        <div id="sidebar-wrapper" style="background-color: #4aad99 ">
             <ul class="sidebar-nav">
 
-                <li class="sidebar-brand"><a href="dashboard.php">Edakwah Admin Page</a></li> 
-
+                <img src="<?php echo("images/sidebar-logo.png"); ?>"/> 
+                <p style="color: #fff; font-size: 30px;">________________________________</p>
                 <li><a href="jadwal.php">Jadwal Kajian</a></li>
                 <!-- <li><a href="category.php">Materi</a></li> -->
                 <li><a href="doa.php">Doa</a></li>
@@ -48,6 +48,8 @@
                <!--  <li><a href="setting.php">Setting</a></li>   -->    
                 <li><a href="admin.php">User</a></li>
                 <li><a href="logout.php">Logout</a></li>
+                <p style="color: #fff; font-size: 30px;">________________________________</p>
+               
 
             </ul>
         </div>
