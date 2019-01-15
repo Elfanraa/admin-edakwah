@@ -124,7 +124,7 @@
 				if($update_result){
 					$error['update_quote'] = " <h4><div class='alert alert-success'>
 														Success update quote
-														<a href='quote_image.php'>
+														<a href='quote.php'>
 														<i class='fa fa-check fa-lg'></i>
 														</a></div>
 												  </h4>";

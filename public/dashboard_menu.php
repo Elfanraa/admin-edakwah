@@ -5,23 +5,53 @@
 
 <?php
 
-	//Total order count
-	$sql_order = "SELECT COUNT(*) as num FROM tbl_reservation";
-	$total_order = mysqli_query($connect, $sql_order);
-	$total_order = mysqli_fetch_array($total_order);
-	$total_order = $total_order['num'];
+	//Total jadwal count
+	$sql_jadwal = "SELECT COUNT(*) as num FROM jadwal_kajian";
+	$total_jadwal = mysqli_query($connect, $sql_jadwal);
+	$total_jadwal = mysqli_fetch_array($total_jadwal);
+	$total_jadwal = $total_jadwal['num'];
 
-	//Total category count
-	$sql_category = "SELECT COUNT(*) as num FROM tbl_category";
-	$total_category = mysqli_query($connect, $sql_category);
-	$total_category = mysqli_fetch_array($total_category);
-	$total_category = $total_category['num'];
+	//Total info count
+	$sql_info = "SELECT COUNT(*) as num FROM info";
+	$total_info = mysqli_query($connect, $sql_info);
+	$total_info = mysqli_fetch_array($total_info);
+	$total_info = $total_info['num'];
 
-	//Total menu count
-	$sql_menu = "SELECT COUNT(*) as num FROM tbl_menu";
-	$total_menu = mysqli_query($connect, $sql_menu);
-	$total_menu = mysqli_fetch_array($total_menu);
-	$total_menu = $total_menu['num'];
+	//Total doa count
+	$sql_doa = "SELECT COUNT(*) as num FROM doa";
+	$total_doa = mysqli_query($connect, $sql_doa);
+	$total_doa = mysqli_fetch_array($total_doa);
+	$total_doa = $total_doa['num'];
+
+	//Total hadits count
+	$sql_hadits = "SELECT COUNT(*) as num FROM hadits";
+	$total_hadits = mysqli_query($connect, $sql_hadits);
+	$total_hadits = mysqli_fetch_array($total_hadits);
+	$total_hadits = $total_hadits['num'];
+
+	//Total kisah nabi count
+	$sql_kisah = "SELECT COUNT(*) as num FROM kisah";
+	$total_kisah = mysqli_query($connect, $sql_kisah);
+	$total_kisah = mysqli_fetch_array($total_kisah);
+	$total_kisah = $total_kisah['num'];
+
+	//Total video count
+	$sql_video = "SELECT COUNT(*) as num FROM video";
+	$total_video = mysqli_query($connect, $sql_video);
+	$total_video = mysqli_fetch_array($total_video);
+	$total_video = $total_video['num'];
+
+	//Total inspirasi count
+	$sql_inspirasi = "SELECT COUNT(*) as num FROM inspirasi";
+	$total_inspirasi = mysqli_query($connect, $sql_inspirasi);
+	$total_inspirasi = mysqli_fetch_array($total_inspirasi);
+	$total_inspirasi = $total_inspirasi['num'];
+
+	//Total quote count
+	$sql_quote = "SELECT COUNT(*) as num FROM quote";
+	$total_quote = mysqli_query($connect, $sql_quote);
+	$total_quote = mysqli_fetch_array($total_quote);
+	$total_quote = $total_quote['num'];
 
 ?>
 <div id="content" class="container col-md-12">
@@ -30,62 +60,137 @@
 		<h1>Dashboard</h1>
 		<hr/>
 	</div>
+	<div class="col-md-12">
 
-	 	<a href="pemesanan.php">
-			<div class="col-sm-6 col-md-2">
+		<a href="jadwal.php">
+			<div class="col-sm-7 col-md-2">
 	            <div class="thumbnail">    
 	              <div class="caption">
 	              <center>
-	              <img src="images/ic_order.png" width="100" height="100">
-	                <h3><?php echo $total_order;?></h3>
-	                <p class="detail">Order List</p>  
+	              <img src="images/jadwal.png" width="100" height="100"> 
+	              <br>
+	              <b><p class="detail" style="font-size: 16px;">Jadwal Kajian </p></b>
+	                <h4>(<?php echo $total_jadwal;?>)</h4>          
 	                </center>
 	              </div>
 	            </div>
 	         </div>
 	    </a>
 
- 		<a href="category.php">
-			<div class="col-sm-6 col-md-2">
+	    <a href="doa.php">
+			<div class="col-sm-7 col-md-2">
 	            <div class="thumbnail">    
 	              <div class="caption">
 	              <center>
-	              <img src="images/ic_category.png" width="100" height="100">
-	                <h3><?php echo $total_category;?></h3>
-	                <p class="detail">Category</p>  
+	              <img src="images/doa.png" width="100" height="100">
+	              <br>
+	              <b><p class="detail" style="font-size: 16px;">Doa </p></b>
+	                <h4>(<?php echo $total_doa;?>)</h4>
 	                </center>
 	              </div>
 	            </div>
 	         </div>
 	    </a>
 
-		<a href="menu.php">
-          <div class="col-sm-6 col-md-2">
-            <div class="thumbnail">    
-              <div class="caption">
-              <center>
-              <img src="images/ic_menu.png" width="100" height="100">
-                <h3><?php echo $total_menu;?></h3>
-                <p class="detail">Menu List</p>  
-                </center>
-              </div>
-            </div>
-          </div>
-        </a>
+	    <a href="kisah.php">
+			<div class="col-sm-7 col-md-2">
+	            <div class="thumbnail">    
+	              <div class="caption">
+	              <center>
+	              <img src="images/kisah.png" width="100" height="100">
+	              <br>
+	              <b><p class="detail" style="font-size: 16px;">Kisah Nabi </p></b>
+	                <h4>(<?php echo $total_kisah;?>)</h4>
+	                </center>
+	              </div>
+	            </div>
+	         </div>
+	    </a>
 
-        <a href="admin.php">
-          <div class="col-sm-6 col-md-2">
-            <div class="thumbnail"> 
-              <div class="caption">
-              <center>
-              <img src="images/ic_setting.png" width="100" height="100">
-                <h3><br></h3>
-                <p class="detail">Setting</p>     
-                </center>
-              </div>
-            </div>
-          </div>
-        </a>
+	    <a href="video.php">
+			<div class="col-sm-7 col-md-2">
+	            <div class="thumbnail">    
+	              <div class="caption">
+	              <center>
+	              <img src="images/video.png" width="100" height="100">
+	              <br>
+	              <b><p class="detail" style="font-size: 16px;">Video </p></b>
+	                <h4>(<?php echo $total_video;?>)</h4>
+	                </center>
+	              </div>
+	            </div>
+	         </div>
+	    </a>
+
+	</div>
+
+	<div class="col-md-12">
+
+		<a href="hadits.php">
+			<div class="col-sm-7 col-md-2">
+	            <div class="thumbnail">    
+	              <div class="caption">
+	              <center>
+	              <img src="images/hadits.png" width="100" height="100">
+	              <br>
+	              <b><p class="detail" style="font-size: 16px;">Hadits </p></b>
+	                <h4>(<?php echo $total_hadits;?>)</h4>
+	                </center>
+	              </div>
+	            </div>
+	         </div>
+	    </a>
+
+	    <a href="inspirasi.php">
+			<div class="col-sm-7 col-md-2">
+	            <div class="thumbnail">    
+	              <div class="caption">
+	              <center>
+	              <img src="images/inspirasi.png" width="100" height="100">
+	              <br>
+	              <b><p class="detail" style="font-size: 16px;">Cerita Inspirasi </p></b>
+	                <h4>(<?php echo $total_inspirasi;?>)</h4>
+	                </center>
+	              </div>
+	            </div>
+	         </div>
+	    </a>
+
+	    <a href="quote.php">
+			<div class="col-sm-7 col-md-2">
+	            <div class="thumbnail">    
+	              <div class="caption">
+	              <center>
+	              <img src="images/quote.png" width="100" height="100">
+	              <br>
+	              <b><p class="detail" style="font-size: 16px;">Quote </p></b>
+	                <h4>(<?php echo $total_quote;?>)</h4>
+	                </center>
+	              </div>
+	            </div>
+	         </div>
+	    </a>
+
+	    <a href="info.php">
+			<div class="col-sm-7 col-md-2">
+	            <div class="thumbnail">    
+	              <div class="caption">
+	              <center>
+	              <img src="images/info.png" width="100" height="100">
+	              <br>
+	              <b><p class="detail" style="font-size: 16px;">Info Kegiatan </p></b>
+	                <h4>(<?php echo $total_info;?>)</h4>
+	                </center>
+	              </div>
+	            </div>
+	         </div>
+	    </a>
+
+	</div>
+
+	 	
+
+        
 </div>
 
 <?php include_once('includes/close_database.php'); ?>

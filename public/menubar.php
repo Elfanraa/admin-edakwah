@@ -34,6 +34,7 @@
             <ul class="sidebar-nav">
 
                 <li class="sidebar-brand"><a href="dashboard.php">Edakwah Admin Page</a></li> 
+
                 <li><a href="jadwal.php">Jadwal Kajian</a></li>
                 <!-- <li><a href="category.php">Materi</a></li> -->
                 <li><a href="doa.php">Doa</a></li>

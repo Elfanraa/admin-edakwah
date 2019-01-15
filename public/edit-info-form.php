@@ -14,7 +14,7 @@
 		$category_data = array();
 			
 		$sql_query = "SELECT info_image 
-				FROM info
+				FROM  info
 				WHERE id_info = ?";
 				
 		$stmt_category = $connect->stmt_init();
@@ -53,13 +53,13 @@
 			error_reporting(E_ERROR | E_PARSE);
 			$extension = end(explode(".", $_FILES["info_image"]["name"]));
 			
-			if(!empty($info_image)){
-				if(!(($info_type == "image/gif") || 
-					($info_type == "image/jpeg") || 
-					($info_type == "image/jpg") || 
-					($info_type == "image/x-png") ||
-					($info_type == "image/png") || 
-					($info_type == "image/pjpeg")) &&
+			if(!empty($menu_image)){
+				if(!(($image_type == "image/gif") || 
+					($image_type == "image/jpeg") || 
+					($image_type == "image/jpg") || 
+					($image_type == "image/x-png") ||
+					($image_type == "image/png") || 
+					($image_type == "image/pjpeg")) &&
 					!(in_array($extension, $allowedExts))){
 					
 					$error['info_image'] = " <span class='label label-danger'>Image type must jpg, jpeg, gif, or png!</span>";
@@ -68,7 +68,7 @@
 				
 			if(!empty($judul_info) && empty($error['info_image'])){
 					
-				if(!empty($info_image)){
+				if(!empty($menu_image)){
 					
 					// create random image file name
 					$string = '0123456789';
@@ -77,7 +77,7 @@
 					$info_image = $function->get_random_string($string, 4)."-".date("Y-m-d").".".$extension;
 				
 					// delete previous image
-					$delete = unlink("$previous_info_image");
+					$delete = unlink("$previous_category_image");
 					
 					// upload new image
 					$upload = move_uploaded_file($_FILES['info_image']['tmp_name'], 'upload/images/'.$info_image);
@@ -102,7 +102,7 @@
 					}
 				}else{
 					
-					$sql_query = "UPDATE info
+					$sql_query = "UPDATE info 
 							SET judul_info = ?
 							WHERE id_info = ?";
 					
@@ -123,8 +123,8 @@
 				// check update result
 				if($update_result){
 					$error['update_info'] = " <h4><div class='alert alert-success'>
-														Success update info
-														<a href='info_image.php'>
+														Success update info kegiatan
+														<a href='info.php'>
 														<i class='fa fa-check fa-lg'></i>
 														</a></div>
 												  </h4>";
@@ -163,7 +163,6 @@
 		}
 		
 	?>
-
 	<div class="col-md-12">
 		<h1>Edit Info</h1>
 		<?php echo isset($error['update_info']) ? $error['update_info'] : '';?>
