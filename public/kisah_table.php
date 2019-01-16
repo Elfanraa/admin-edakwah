@@ -109,7 +109,12 @@
 		// if no data on database show "Tidak Ada Pemesanan"
 		if($total_records_paging == 0){
 	?>
-	<h1>There is No Order</h1>
+	<h1>Kisah Nabi tidak ditemukan
+		<a href="add-kisah.php">
+			<button class="btn btn-danger">Add Kisah Nabi</button>
+		</a>
+	</h1>
+
 	<hr />
 	
 	<?php
