@@ -110,7 +110,7 @@
 		if($total_records_paging == 0){
 	?>
 	<h1>Hadist Tidak ditemukan
-		<a href="add-kisah.php">
+		<a href="add-hadits.php">
 			<button class="btn btn-danger">Add Hadits</button>
 		</a>
 	</h1>
