@@ -125,7 +125,7 @@
 					$error['update_quote'] = " <h4><div class='alert alert-success'>
 														Success update quote
 														<a href='quote.php'>
-														<i class='fa fa-check fa-lg'></i>
+														<i style='color:#3c763d' class='icon fa fa-check'></i>
 														</a></div>
 												  </h4>";
 				}else{

@@ -130,7 +130,7 @@
 					$error['update_inspirasi'] = " <h4><div class='alert alert-success'>
 														Success update inspirasi
 														<a href='inspirasi.php'>
-														<i class='fa fa-check fa-lg'></i>
+														<i style='color:#3c763d' class='icon fa fa-check'></i>
 														</a></div>
 												  </h4>";
 				}else{
@@ -168,6 +168,8 @@
 		}
 		
 	?>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	
 	<div class="col-md-12">
 		<h1>Edit Inspirasi</h1>
 		<?php echo isset($error['update_inspirasi']) ? $error['update_inspirasi'] : '';?>

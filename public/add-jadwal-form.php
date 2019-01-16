@@ -84,7 +84,7 @@
 					$error['add_jadwal'] = " <h4><div class='alert alert-success'>
 														* Success add new jadwal kajian
 														<a href='jadwal.php'>
-														<i class=fas fa-check'></i>
+														<i style='color:#3c763d' class='icon fa fa-check'></i>
 														</a></div>
 												  </h4>";
 				}else{
@@ -102,6 +102,8 @@
 		}		
 
 	?>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	
 	<div class="col-md-12">
 		<h1>Add Jadwal</h1>
 		<?php echo isset($error['add_jadwal']) ? $error['add_jadwal'] : '';?>

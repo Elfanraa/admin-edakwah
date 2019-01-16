@@ -141,7 +141,7 @@
 					$error['update_jadwal'] = " <h4><div class='alert alert-success'>
 														Success update jadwal kajian
 														<a href='jadwal.php'>
-														<i class='fa fa-check fa-lg'></i>
+														<i style='color:#3c763d' class='icon fa fa-check'></i>
 														</a></div>
 												  </h4>";
 				}else{
@@ -215,6 +215,7 @@
 			<input type="submit" class="btn-danger btn" value="Cancel" name="btnCancel"/>
 		</form>
 	</div> -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 	<div class="col-md-12">
 		<h1>Edit Jadwal</h1>

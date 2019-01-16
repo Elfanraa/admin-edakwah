@@ -23,7 +23,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 
 <body>
@@ -36,7 +36,7 @@
 
                 <img src="<?php echo("images/sidebar-logo.png"); ?>"/> 
                 <p style="color: #fff; font-size: 30px;">________________________________</p>
-                <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="jadwal.php">Jadwal Kajian</a></li>
+                <li style="font-size: 18px; color: #fff"><a  style="font-size: 18px; color: #fff" href="jadwal.php">Jadwal Kajian</a></li>
                 <!-- <li><a href="category.php">Materi</a></li> -->
                 <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="doa.php">Doa</a></li>
                 <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="kisah.php">Kisah Nabi</a></li>

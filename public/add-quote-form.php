@@ -73,7 +73,7 @@
 					$error['add_quote'] = " <h4><div class='alert alert-success'>
 														* Success add new quote
 														<a href='quote.php'>
-														<i class='fa fa-check fa-lg'></i>
+														<i style='color:#3c763d' class='icon fa fa-check'></i>
 														</a></div>
 												  </h4>";
 				}else{
@@ -88,6 +88,7 @@
 		}
 
 	?>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<div class="col-md-12">
 		<h1>Add Kutipan</h1>
 		<?php echo isset($error['add_quote']) ? $error['add_quote'] : '';?>
