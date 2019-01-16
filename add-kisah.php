@@ -31,13 +31,15 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/custom.css">
-        <title>Ecommerce Admin Page</title>
+        <title>Edakwah Admin Page</title>
     </head>
     <body>
     	<div id="container">
     		<?php include('public/menubar.php'); ?>
     		<?php include('public/add-kisah-form.php'); ?>
 			<?php include('public/footer.php'); ?>
+			<div class="col-md-12" align="center" style=" ">
+    			<b><p style="padding-top: 10px; color: #4aad99;">Copyright © 2018 | <a style="text-decoration: none; color: #4aad99;" href="dashboard.php"> Masjid Jami' An-Ni'mah</a></p></b>
     	</div>
 
     <script src="css/js/jquery.min.js"></script>
