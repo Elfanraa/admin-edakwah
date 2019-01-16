@@ -34,8 +34,10 @@
             <ul class="sidebar-nav">
 
 
-                <img src="<?php echo("images/sidebar-logo.png"); ?>"/> 
-                <p style="color: #fff; font-size: 30px;">________________________________</p>
+                <a href="dashboard.php"><img  src="<?php echo("images/sidebar-logo.png"); ?>"/></a>
+                <li><b><hr style="color: #fff; color: 30px;" ></b> 
+                    
+                </li>
                 <li style="font-size: 18px; color: #fff"><a  style="font-size: 18px; color: #fff" href="jadwal.php">Jadwal Kajian</a></li>
                 <!-- <li><a href="category.php">Materi</a></li> -->
                 <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="doa.php">Doa</a></li>
@@ -49,7 +51,7 @@
                <!--  <li><a href="setting.php">Setting</a></li>   -->    
                 <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="admin.php">User</a></li>
                 <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="logout.php">Logout</a></li>
-                <p style="color: #fff; font-size: 30px;">________________________________</p>
+                <hr style="color: #fff; font-size: 30px; size: 70px"> 
                
 
             </ul>
