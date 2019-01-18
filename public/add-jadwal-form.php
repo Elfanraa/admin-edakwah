@@ -138,13 +138,14 @@
 
 			<div class="col-md-9">
 			
-			</br>
+			
+			
 			<label>Materi :</label><?php echo isset($error['materi']) ? $error['materi'] : '';?>
 			<textarea name="materi" id="materi" class="form-control" rows="16"></textarea>
 			<script type="text/javascript" src="css/js/ckeditor/ckeditor.js"></script>
 			<script type="text/javascript">                        
             CKEDITOR.replace( 'materi' );
-       		 </script>
+       		 </script> 
        		</br>
 
        		<div class="col-md-12" align="center">

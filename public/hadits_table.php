@@ -60,7 +60,7 @@
 		}
 		
 		// number of data that will be display per page
-		$offset = 7;
+		$offset = 1;
 							
 		//lets calculate the LIMIT for SQL, and save it $from
 		if ($page){
@@ -151,6 +151,7 @@
 	<div class="table-responsive">
 	<table class='table table-hover table-condensed table-bordered'>
 		<tr class="success">
+			<th>No</th>
 			<th>Judul Hadits</th>
 			<th>Isi Hadits</th>
 			<!-- <th>Tanggal</th>
@@ -162,17 +163,19 @@
 			<th>Action</th>
 		</tr>
 		<?php
+			$no=1;
 			// get all data using while loop
 			while ($stmt_paging->fetch()){ ?>
 			<tr>
-				<td><?php echo $data['judul_hadits'];?></td>
-				<td><?php echo $data['isi_hadits'];?></td> 
+				<td width="1%"><?php echo $no++;?></td>
+				<td width="30%"><?php echo $data['judul_hadits'];?></td>
+				<td width="40%"><?php echo $data['isi_hadits'];?></td> 
 				<!-- <td><?php echo $data['Email'];?></td>
 				<td><?php echo $data['Number_of_people'];?></td>
 				<td><?php echo $data['Date_n_Time'];?></td>
 				<td><?php echo $data['Phone_number'];?></td>
 				<td><?php echo $data['Status'] == 1 ? "<span class='label label-primary'>PROCESSED</span>" : "<span class='label label-danger'>NOT PROCESSED</span>";?></td> -->
-				<td>
+				<td width="1%">
 					<a href="edit-hadits.php?id=<?php echo $data['id_hadits'];?>">
 						Edit
 					</a>&nbsp;

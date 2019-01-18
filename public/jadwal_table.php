@@ -25,12 +25,12 @@
 		if(empty($keyword)){
 			$sql_query = "SELECT * 
 				FROM jadwal_kajian  
-				ORDER BY Nama_ustad DESC";
+				ORDER BY Tanggal DESC";
 		}else{
 			$sql_query = "SELECT *
 				FROM jadwal_kajian 
 				WHERE Nama_ustad LIKE ? 
-				ORDER BY Nama_ustad DESC";
+				ORDER BY Tanggal DESC";
 		}
 			
 		$stmt = $connect->stmt_init();
@@ -64,7 +64,7 @@
 		}
 		
 		// number of data that will be display per page
-		$offset = 7;
+		$offset = 1;
 							
 		//lets calculate the LIMIT for SQL, and save it $from
 		if ($page){
@@ -132,7 +132,7 @@
 	<div>
 
 
-	<div class="col-md-12">
+	<div class="col-md-12 ">
 		<h1>Jadwal Kajian
 		<!-- <a href="add-category.php"> -->
 			<a href="add-jadwal.php">
@@ -161,6 +161,7 @@
 	<div class="table-responsive">
 	<table class='table table-hover table-condensed table-bordered'>
 		<tr class="success">
+			<th>No</th>
 			<th>Nama Penceramah</th>
 			<th>Hari</th>
 			<th>Tanggal</th>
@@ -172,24 +173,30 @@
 			<th>Action</th>
 		</tr>
 		<?php
+			$no=1; 
 			// get all data using while loop
-			while ($stmt_paging->fetch()){ ?>
+			while ($stmt_paging->fetch()){ 
+				?>
 			<tr>
-				<td><?php echo $data['Nama_ustad'];?></td>
+				<td><?php echo $no++; ?></td>
+				<td width="18%"><?php echo $data['Nama_ustad'];?></td>
 				<!-- <td><?php echo $data['Alamat'];?></td> -->
-				<td><?php echo $data['Hari'];?></td>
-				<td><?php echo $data['Tanggal'];?></td>
-				<td><?php echo $data['Jam'];?></td>
-				<td><?php echo $data['Tema'];?></td>
-				<td><?php echo $data['Materi'];?></td>
+				<td width="7%"><?php echo $data['Hari'];?></td>
+				<td width="8%"><?php echo $data['Tanggal'];?></td>
+				<td width="9%"><?php echo $data['Jam'];?></td>
+				<td width="15%"><?php echo $data['Tema'];?></td>
+				<td><?php echo substr($data['Materi'],0,800) ;?>
+				<?php echo "....."  ?>
+				<a href="jadwal-detail.php?id=<?php echo $data['id_kajian'];?>">
+						[ Read More ]
+					</a>&nbsp; 
+				</td>
 				<td>
 					<a href="edit-jadwal.php?id=<?php echo $data['id_kajian'];?>">
 						Edit
 					</a>&nbsp;
 
-					<!-- <a href="pemesanan-detail.php?id=<?php echo $data['ID'];?>">
-						Detail
-					</a>&nbsp; -->
+					 
 
 					<a href="delete-jadwal.php?id=<?php echo $data['id_kajian'];?>">
 						Delete

@@ -34,7 +34,7 @@
             <ul class="sidebar-nav">
 
 
-                <a href="dashboard.php"><img  src="<?php echo("images/sidebar-logo.png"); ?>"/></a>
+                <a href="dashboard.php"><img  src="<?php echo("images/sidebar-logo2.png"); ?>"/></a>
                 <li><b><hr style="color: #fff; color: 30px;" ></b> 
                     
                 </li>

@@ -58,7 +58,7 @@
 		}
 						
 		// number of data that will be display per page		
-		$offset = 7;
+		$offset = 1;
 						
 		//lets calculate the LIMIT for SQL, and save it $from
 		if ($page){
@@ -145,15 +145,25 @@
 	<div class="table-responsive">
 	<table class='table table-hover table-condensed table-bordered'>
 		<tr class="success">
+			<th>No</th>
 			<th>Judul Do'a</th>
 			<th>Isi Do'a</th>
 			<th>Action</th>
 		</tr>
-	<?php while ($stmt_paging->fetch()){ ?>
+	<?php 
+	$no=1; 
+	while ($stmt_paging->fetch()){ ?>
 		<tr>
-			<td><?php echo $data['judul'];?></td>
-			<td><?php echo $data['isi'];?></td>
-			<td width="25%">
+			<td width="1%"><?php echo $no++; ?></td>
+			<td width="15%"><?php echo $data['judul'];?></td>
+			<td width="25%"><?php echo substr($data['isi'],0,400) ;?>
+			<?php echo "..."  ?>
+			<a href="doa-detail.php?id=<?php echo $data['id_doa'];?>">
+						[ Read More ]
+					</a>&nbsp; 
+				</td> 
+			<!-- <td width="10%"><?php echo $data['isi'];?></td> -->
+			<td width="1%">
 				<a href="edit-doa.php?id=<?php echo $data['id_doa'];?>">
 				Edit
 				</a>&nbsp;

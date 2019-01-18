@@ -59,7 +59,7 @@
 		}
 						
 		// number of data that will be display per page		
-		$offset = 7;
+		$offset = 1;
 						
 		//lets calculate the LIMIT for SQL, and save it $from
 		if ($page){
@@ -147,17 +147,22 @@
 	<div class="table-responsive">
 	<table class='table table-hover table-condensed table-bordered'>
 		<tr class="success">
+			<th>No</th>
 			<th>Judul</th>
 			<th>Nama Penceramah</th>
 			<th>Video</th>
 			<th>Action</th>
 		</tr>
-	<?php while ($stmt_paging->fetch()){ ?>
+
+	<?php 
+	$no=1;
+	while ($stmt_paging->fetch()){ ?>
 		<tr>
-			<td><?php echo $data['judul_video'];?></td>
-			<td><?php echo $data['nama_penceramah'];?></td>
-			<td><video src="<?php echo $data['video']; ?>" width="360" height="240"></video></td>
-			<td width="25%">
+			<td width="1%"><?php echo $no++;?></td>
+			<td width="40%"><?php echo $data['judul_video'];?></td>
+			<td width="15%"><?php echo $data['nama_penceramah'];?></td>
+			<td width="426" height="240"><video src="<?php echo $data['video']; ?>" width="100%" height="100%"  controls></video></td>
+			<td width="1%">
 				<a href="edit-video.php?id=<?php echo $data['id_video'];?>">
 				Edit
 				</a>&nbsp;

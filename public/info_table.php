@@ -141,19 +141,23 @@
 	<!-- end of search form -->
 	
 	<br/>
-	<div class="col-md-5">
+	<div class="col-md-12">
 	<div class="table-responsive">
 	<table class='table table-hover table-condensed table-bordered'>
 		<tr class="success">
+			<th>No</th>
 			<th>Judul Info</th>
 			<th>Image</th>
 			<th>Action</th>
 		</tr>
-	<?php while ($stmt_paging->fetch()){ ?>
+	<?php 
+	$no=1;
+	while ($stmt_paging->fetch()){ ?>
 		<tr>
-			<td><?php echo $data['judul_info'];?></td>
-			<td><img src="<?php echo $data['info_image']; ?>" width="40" height="40"/></td>
-			<td width="25%">
+			<td width="1%"><?php echo $no++;?></td>
+			<td width="40%"><?php echo $data['judul_info'];?></td>
+			<td width="30%"><img src="<?php echo $data['info_image']; ?>" width="100%" height="100%"/></td>
+			<td width="1%">
 				<a href="edit-info.php?id=<?php echo $data['id_info'];?>">
 				Edit
 				</a>&nbsp;
