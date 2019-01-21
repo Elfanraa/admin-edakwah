@@ -155,8 +155,8 @@
 	while ($stmt_paging->fetch()){ ?>
 		<tr>
 			<td width="1%"><?php echo $no++;?></td>
-			<td width="40%"><?php echo $data['judul_info'];?></td>
-			<td width="30%"><img src="<?php echo $data['info_image']; ?>" width="100%" height="100%"/></td>
+			<td width="20%"><?php echo $data['judul_info'];?></td>
+			<td width="30%"><img src="<?php echo $data['info_image']; ?>" width="480" height="240"/></td>
 			<td width="1%">
 				<a href="edit-info.php?id=<?php echo $data['id_info'];?>">
 				Edit

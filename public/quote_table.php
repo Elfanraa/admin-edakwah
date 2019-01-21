@@ -156,7 +156,7 @@
 		<tr>
 			<td width="1%"><?php echo $no++;?></td>
 			<td width="40%"><?php echo $data['judul_quote'];?></td>
-			<td width="40%"><img src="<?php echo $data['quote_image']; ?>" width="100%" height="100%"/></td>
+			<td width="40%"><img src="<?php echo $data['quote_image']; ?>" width="360" height="360"/></td>
 			<td width="1%">
 				<a href="edit-quote.php?id=<?php echo $data['id_quote'];?>">
 				Edit
