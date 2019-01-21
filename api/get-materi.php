@@ -24,12 +24,16 @@
 		
 		//Memasukkan Nama dan ID kedalam Array Kosong yang telah dibuat 
 		array_push($result,array(
-			"Tema"=>$row['Tema']
+			"Nama_ustad"=>$row['Nama_ustad'],
+			"Hari"=>$row['Hari'],
+			"Tanggal"=>$row['Tanggal'],
+			"Tema"=>$row['Tema'],
+			
 		));
 	}
 	
 	//Menampilkan Array dalam Format JSON
-	echo json_encode(array('result'=>$result));
+	echo json_encode($result);
 	
 	mysqli_close($con);
 ?>
