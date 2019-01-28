@@ -54,7 +54,7 @@
 				$sql_query = "INSERT INTO quote (judul_quote, quote_image)
 						VALUES(?, ?)";
 				
-				$upload_image = 'upload/images/'.$quote_image;
+				$upload_image = 'http://192.168.43.186:81/edakwah3/upload/images/'.$quote_image;
 				$stmt = $connect->stmt_init();
 				if($stmt->prepare($sql_query)) {	
 					// Bind your variables to replace the ?s
@@ -101,9 +101,13 @@
 			<label>Judul Quote :</label><?php echo isset($error['judul_quote']) ? $error['judul_quote'] : '';?>
 			<input type="text" class="form-control" name="judul_quote"/>
 			<br/>
+			<!-- <label>Image Url :</label><?php echo isset($error['judul_quote']) ? $error['judul_quote'] : '';?>
+			<input type="text" class="form-control" name="judul_quote"/>
+			<br/> -->
 			<label>Image :</label><?php echo isset($error['quote_image']) ? $error['quote_image'] : '';?>
 			<input type="file" name="quote_image" id="quote_image" />
 			<br/>
+			
 			<input type="submit" class="btn-primary btn" value="Submit" name="btnAdd"/>
 			<input type="reset" class="btn-warning btn" value="Clear"/>
 			<input type="submit" class="btn-danger btn" value="Cancel" name="btnCancel"/>

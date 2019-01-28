@@ -10,6 +10,9 @@
  
 	//Import File Koneksi Database
 	require_once('conn.php');
+
+	header('Content-Type:application/json;charset=utf8'); 
+	mysqli_set_charset($con,"utf8");
 	
 	//Membuat SQL Query
 	$sql = "SELECT * FROM inspirasi ";
@@ -24,7 +27,8 @@
 		
 		//Memasukkan Nama dan ID kedalam Array Kosong yang telah dibuat 
 		array_push($result,array(
-			"judul_inspirasi"=>$row['judul_inspirasi']
+			"judul_inspirasi"=>$row['judul_inspirasi'],
+			"isi_inspirasi"=>$row['isi_inspirasi']
 
 		));
 	}

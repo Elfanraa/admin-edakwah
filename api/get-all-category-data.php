@@ -8,18 +8,26 @@
 		if($access_key_received == $access_key){
 			// get all category data from category table
 			$sql_query = "SELECT * 
-					FROM tbl_category 
-					ORDER BY Category_name ASC ";
+					FROM quote";
+
+					$r = mysqli_query($connect,$sql_query);
+	
+			//Membuat Array Kosong 
+			$result = array();
 			
-			$result = $connect->query($sql_query) or die ("Error :".mysql_error());
+			//$result = $connect->query($sql_query) or die ("Error :".mysql_error());
 	 
-			$categories = array();
-			while($category = $result->fetch_assoc()) {
-				$categories[] = array('Category'=>$category);
+			//$categories = array();
+			while($row = mysqli_fetch_array($r)){
+				array_push($result,array(
+			"judul_quote"=>$row['judul_quote'],
+			"quote_image"=>$row['quote_image']
+
+		));
 			}
 			
 			// create json output
-			$output = json_encode(array('data' => $categories));
+			$output = json_encode($result);
 		}else{
 			die('accesskey is incorrect.');
 		}

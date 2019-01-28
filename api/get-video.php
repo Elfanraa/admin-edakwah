@@ -10,6 +10,9 @@
  
 	//Import File Koneksi Database
 	require_once('conn.php');
+
+	header('Content-Type:application/json;charset=utf8'); 
+	mysqli_set_charset($con,"utf8");
 	
 	//Membuat SQL Query
 	$sql = "SELECT * FROM video";

@@ -10,6 +10,9 @@
  
 	//Import File Koneksi Database
 	require_once('conn.php');
+
+	header('Content-Type:application/json;charset=utf8'); 
+	mysqli_set_charset($con,"utf8");
 	
 	//Membuat SQL Query
 	$sql = "SELECT * FROM quote ";
@@ -24,13 +27,15 @@
 		
 		//Memasukkan Nama dan ID kedalam Array Kosong yang telah dibuat 
 		array_push($result,array(
-			"judul_quote"=>$row['judul_quote']
+			"judul_quote"=>$row['judul_quote'],
+			"quote_image"=>$row['quote_image']
 
 		));
 	}
 	
 	//Menampilkan Array dalam Format JSON
 	echo json_encode($result);
+	
 	
 	mysqli_close($con);
 ?>

@@ -10,9 +10,12 @@
  
 	//Import File Koneksi Database
 	require_once('conn.php');
+
+	header('Content-Type:application/json;charset=utf8'); 
+	mysqli_set_charset($con,"utf8");
 	
 	//Membuat SQL Query
-	$sql = "SELECT * FROM jadwal_kajian";
+	$sql = "SELECT * FROM jadwal_kajian Order By Tanggal DESC";
 	
 	//Mendapatkan Hasil
 	$r = mysqli_query($con,$sql);
@@ -28,6 +31,8 @@
 			"Hari"=>$row['Hari'],
 			"Tanggal"=>$row['Tanggal'],
 			"Tema"=>$row['Tema'],
+			"Materi"=>$row['Materi']
+
 			
 		));
 	}
