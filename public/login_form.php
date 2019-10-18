@@ -66,13 +66,13 @@
 	}
 	?>
 <div id="login_content" class="col-md-11 login">
-	<body class="hold-transition login-page"  style="background-repeat: no-repeat; background-size: cover; background-image:url(<?php echo ("images/Vector_Ramadhan.png"); ?>);">
+	<body class="hold-transition login-page"  style="background-repeat: no-repeat; background-size: cover; background-image:url(<?php echo ("images/background2.jpg"); ?>);">
 
   	<div class="col-md-4 col-md-offset-4">
 	      <div class="panel panel-default">
 			  <!-- Default panel contents -->
 			  <div class="panel-heading" style="height: 140px;">
-				  <center><a href="#"><img src="<?php echo("images/logo-admin2.png"); ?>"/></a></center>
+				  <center><a href="#"><img src="<?php echo("images/login.png"); ?>"/></a></center>
 				  
 			  </div>
 			  <div class="panel-body">
@@ -87,7 +87,7 @@
 				            <input type="password" class="form-control" name="password" required>
 							
 							<br>
-							<a href="forget-password.php"><p class="pull-left">Forgot Password?</p></a>
+							<!-- <a href="forget-password.php"><p class="pull-left">Forgot Password?</p></a> -->
 							<button type="submit" name="btnLogin" class="btn btn-primary pull-right">Login</button><br><br>		
 				    </form>
 				

@@ -1,4 +1,4 @@
 <?php
-	include($_SERVER['DOCUMENT_ROOT'].'/edakwah3/includes/variables.php');
+	include($_SERVER['DOCUMENT_ROOT'].'/admin_telp2/includes/variables.php');
 	$connect->close();
 ?>

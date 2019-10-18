@@ -31,16 +31,18 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/custom.css">
-        <title>Dahboard</title>
+        <title>Tambah Daftar Telepon</title>
     </head>
     <body>
     	<div id="container">
     		<?php include('public/menubar.php'); ?>
-    		<?php include('public/dashboard_menu.php'); ?>
+    		<?php include('public/add-user-form.php'); ?>
 			<?php include('public/footer.php'); ?>
+			<div class="col-md-12" align="center" style=" ">
+    			<b><p style="padding-top: 10px; color: #4aad99;">Copyright © 2019 | <a style="text-decoration: none; color: #4aad99;" href="dashboard.php"> Mabes TNI</a></p></b>
     	</div>
 
-	<script src="css/js/jquery.min.js"></script>
+    <script src="css/js/jquery.min.js"></script>
     <script src="css/js/bootstrap.min.js"></script>	
     </body>
 </html>

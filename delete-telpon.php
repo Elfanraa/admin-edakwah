@@ -1,4 +1,5 @@
 <?php
+	ob_start();
 	// start session
 	session_start();
 	
@@ -31,16 +32,16 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/custom.css">
-        <title>Dahboard</title>
+        <title>Ecommerce Admin Page</title>
     </head>
     <body>
     	<div id="container">
     		<?php include('public/menubar.php'); ?>
-    		<?php include('public/dashboard_menu.php'); ?>
+    		<?php include('public/confirm-delete-telpon.php'); ?>
 			<?php include('public/footer.php'); ?>
     	</div>
-
+		
 	<script src="css/js/jquery.min.js"></script>
-    <script src="css/js/bootstrap.min.js"></script>	
+    <script src="css/js/bootstrap.min.js"></script>
     </body>
 </html>

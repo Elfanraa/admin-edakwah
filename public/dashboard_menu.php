@@ -6,12 +6,22 @@
 <?php
 
 	//Total jadwal count
-	$sql_jadwal = "SELECT COUNT(*) as num FROM jadwal_kajian";
-	$total_jadwal = mysqli_query($connect, $sql_jadwal);
-	$total_jadwal = mysqli_fetch_array($total_jadwal);
-	$total_jadwal = $total_jadwal['num'];
+	$sql_user = "SELECT COUNT(*) as num FROM pengguna";
+	$total_user = mysqli_query($connect, $sql_user);
+	$total_user = mysqli_fetch_array($total_user);
+	$total_user = $total_user['num'];
 
-	//Total info count
+	$sql_telp = "SELECT COUNT(*) as num FROM telepon";
+	$total_tlp = mysqli_query($connect, $sql_telp);
+	$total_tlp = mysqli_fetch_array($total_tlp);
+	$total_tlp = $total_tlp['num'];
+/*
+	$sql_user = "SELECT COUNT(*) as num FROM tbl_user";
+	$total_user = mysqli_query($connect, $sql_user);
+	$total_user = mysqli_fetch_array($total_user);
+	$total_user = $total_user['num'];*/
+
+	/*//Total info count
 	$sql_info = "SELECT COUNT(*) as num FROM info";
 	$total_info = mysqli_query($connect, $sql_info);
 	$total_info = mysqli_fetch_array($total_info);
@@ -51,33 +61,63 @@
 	$sql_quote = "SELECT COUNT(*) as num FROM quote";
 	$total_quote = mysqli_query($connect, $sql_quote);
 	$total_quote = mysqli_fetch_array($total_quote);
-	$total_quote = $total_quote['num'];
+	$total_quote = $total_quote['num'];*/
 
-?>
+?> 
 <div id="content" class="container col-md-12">
 
 <div class="col-md-12">
 		<h1>Dashboard</h1>
 		<hr/>
 	</div>
-	<div class="col-md-12">
+	<div class="col-md-16">
 
-		<a href="jadwal.php">
+		<!-- <a href="telpon.php">
 			<div class="col-sm-7 col-md-2">
-	            <div class="thumbnail">    
-	              <div class="caption">
+	            <div class="thumbnail"style="width: 200px;height: 178px">    
+	              <div class="caption" >
 	              <center>
-	              <img src="images/jadwal.png" width="100" height="100"> 
+	              <img src="images/user.png" width="100" height="100"> 
 	              <br>
-	              <b><p class="detail" style="font-size: 16px;">Jadwal Kajian </p></b>
-	                <h4>(<?php echo $total_jadwal;?>)</h4>          
+	              <b><p class="detail" style="font-size: 15px;">Users </p></b>
+	                <h4>(<?php echo $total_user;?>)</h4>          
+	                </center>
+	              </div>
+	            </div>
+	         </div>
+	    </a> -->
+
+	    <a href="user.php">
+			<div class="col-sm-7 col-md-2">
+	            <div class="thumbnail"style="width: 200px;height: 178px">    
+	              <div class="caption" >
+	              <center>
+	              <img src="images/user.png" width="100" height="100"> 
+	              <br>
+	              <b><p class="detail" style="font-size: 15px;">Daftar User</p></b>
+	                <h4>(<?php echo $total_user;?>)</h4>          
 	                </center>
 	              </div>
 	            </div>
 	         </div>
 	    </a>
 
-	    <a href="doa.php">
+	    <a href="telpon.php">
+			<div class="col-sm-7 col-md-2">
+	            <div class="thumbnail"style="width: 200px;height: 178px">    
+	              <div class="caption" >
+	              <center>
+	              <img src="images/kontak.png" width="100" height="100"> 
+	              <br>
+	              <b><p class="detail" style="font-size: 15px;">Daftar Nomor Telepon </p></b>
+	                <h4>(<?php echo $total_tlp;?>)</h4>          
+	                </center>
+	              </div>
+	            </div>
+	         </div>
+	    </a>
+
+	   <!--  <a href="doa.php">
 			<div class="col-sm-7 col-md-2">
 	            <div class="thumbnail">    
 	              <div class="caption">
@@ -186,7 +226,7 @@
 	         </div>
 	    </a>
 
-	</div>
+	</div> -->
 
 	 	
 

@@ -30,26 +30,22 @@
 
     <div id="wrapper">
 <!-- Sidebar -->
-        <div id="sidebar-wrapper" style="background-color: #4aad99 ">
+        <div id="sidebar-wrapper" style="background-color: #428bca ">
             <ul class="sidebar-nav">
 
 
-                <a href="dashboard.php"><img  src="<?php echo("images/sidebar-logo2.png"); ?>"/></a>
+                <a href="dashboard.php"><img  src="<?php echo("images/menu.png"); ?>"/></a>
                 <li><b><hr style="color: #fff; color: 30px;" ></b> 
                     
                 </li>
-                <li style="font-size: 18px; color: #fff"><a  style="font-size: 18px; color: #fff" href="jadwal.php">Jadwal Kajian</a></li>
-                <!-- <li><a href="category.php">Materi</a></li> -->
-                <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="doa.php">Doa</a></li>
-                <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="kisah.php">Kisah Nabi</a></li>
-                <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="video.php">Video</a></li>
-                <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="hadits.php">Hadist</a></li>
-                <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="inspirasi.php">Cerita Inspirasi</a></li>
-                <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="quote.php">Quote</a></li>
-                <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="info.php">Info Kegiatan</a></li>
-             <!--<li><a href="laporan.php">Laporan</a></li>   --> 
-               <!--  <li><a href="setting.php">Setting</a></li>   -->    
-                <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="admin.php">User</a></li>
+
+                <!-- <li style="font-size: 18px; color: #fff"><a  style="font-size: 18px; color: #fff" href="jadwal.php">Users</a></li> -->
+               <!--  <li style="font-size: 18px; color: #fff"><a  style="font-size: 18px; color: #fff" href="telpon.php">Daftar Users</a></li> -->
+
+                <li style="font-size: 18px; color: #fff"><a  style="font-size: 18px; color: #fff" href="user.php">Daftar User</a></li>
+
+                <li style="font-size: 18px; color: #fff"><a  style="font-size: 18px; color: #fff" href="telpon.php">Daftar Nomor Telepon</a></li>
+            
                 <li style="font-size: 18px; color: #fff"><a style="font-size: 18px; color: #fff" href="logout.php">Logout</a></li>
                 <hr style="color: #fff; font-size: 30px; size: 70px"> 
                

@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/login_css.css">
         <link rel="stylesheet" href="css/custom.css">
-        <title>Edakwah Admin Page</title>
+        <title>Aplikasi Daftar Telp</title>
         <style>
             .login{
               margin-top: 12%;
